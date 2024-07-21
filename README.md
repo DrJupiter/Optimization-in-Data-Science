@@ -1,5 +1,7 @@
 ### Course Description: CO673/CS794 Fall 2022 - Optimization in Data Science
 
+[Course website](https://cs.uwaterloo.ca/~y328yu/mycourses/794/index.html)
+
 **University of Waterloo**
 
 ---
