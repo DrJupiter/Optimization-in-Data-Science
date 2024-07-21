@@ -16,27 +16,30 @@ The course "Optimization in Data Science" aims to provide a comprehensive introd
 - Study convex sets and functions, and Fermat's optimality condition for unconstrained optimization.
 - Master gradient descent algorithms and their variants, including Stochastic Gradient Descent (SGD), Mini-batch Gradient Descent, Momentum, Nesterov Accelerated Gradient (NAG), AdaGrad, RMSProp, and Adam.
 
-**Course Content:**
-1. **Vector Spaces and Operations:**
-   - Definition and axioms of vector spaces
-   - Euclidean space and element-wise operations
-2. **Matrices:**
-   - Matrix definitions, transpositions, and multiplications
-   - Eigenvalues and eigenvectors
-3. **Norms:**
-   - L1 norm (Manhattan norm)
-   - L2 norm (Euclidean norm)
-   - Infinity norm
-4. **Convex Sets and Functions:**
-   - Definitions and properties of convex sets
-   - Conditions for convex functions
-5. **Fermat's Optimality Condition:**
-   - Optimal points and gradient conditions
-6. **Gradient Algorithms:**
-   - Gradient descent and its variants
-   - Practical examples and assignments
+### Project 1: Orthogonal Residual Polynomial Iteration and Gradient Descent for Huber Regression
 
-**Prerequisites:**
-Basic knowledge of linear algebra, calculus, and programming in Python is required for this course. 
+**Objective:**
+This project explores polynomial iterations, particularly the conjugate gradient algorithm, and applies gradient descent techniques to Huber regression. It involves theoretical derivations and practical implementations to optimize functions in data science.
 
-The course blends theoretical concepts with practical applications, making it ideal for students aiming to deepen their understanding of optimization in data science, machine learning, and artificial intelligence.
+**Key Components:**
+1. **Orthogonal Residual Polynomial Iteration:**
+   - **Derivation of Three-term Recursion:** Detailed derivation of polynomial iterations and their remarkable properties, including connections to reproducing polynomial kernels.
+   - **Orthogonal Polynomials:** Analysis of orthogonal residual polynomials through three-term recursion and verification using inner products.
+
+2. **Gradient Descent for Huber Regression:**
+   - **Huber Regression Objective:** Minimize the Huber regression objective using gradient descent with two step-size choices: constant and Armijo's backtracking rule.
+   - **Gradient Calculation:** Derivation of the gradient for the Huber regression objective.
+   - **L-smoothness:** Evaluation of whether the objective function is L-smooth with respect to the Euclidean norm.
+
+**Implementation:**
+- **Gradient Descent Algorithm:** Implementation of gradient descent with constant and backtracking step sizes.
+- **Application on Boston Housing Dataset:** Applied gradient descent to train on the Boston housing dataset, analyzing the performance on the test set using average error metrics.
+
+**Results:**
+- **Convergence Analysis:** Comparison of convergence rates for constant and backtracking step sizes.
+- **Performance Metrics:** Visualization of objective function values and average errors over iterations for both step-size methods.
+
+**Conclusion:**
+The project provides a comprehensive analysis of polynomial iterations and gradient descent methods for optimization in data science. The implementation showcases the practical application of these methods, highlighting the importance of choosing appropriate step sizes for convergence.
+
+
